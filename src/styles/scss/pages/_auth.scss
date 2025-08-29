@@ -1,0 +1,31 @@
+@charset 'utf-8';
+@use "@/styles/scss/globals.scss" as *;
+@use "sass:color";
+
+.auth {
+  .in-b {
+    margin-top: 50px;
+  }
+  .title-2 {
+    margin: 0 auto 30px;
+    text-align: center;
+  }
+  .input-area {
+    .MuiFormControl-root {
+      width: 100%;
+      margin: 0;
+      + .MuiFormControl-root {
+        margin-top: 20px;
+      }
+      .MuiInputBase-root {
+        width: 100%;
+      }
+    }
+  }
+  .form-field {
+    .btn {
+      width: 100%;
+      margin-top: 20px;
+    }
+  }
+}

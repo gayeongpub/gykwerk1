@@ -1,0 +1,24 @@
+@use "@/styles/scss/globals.scss" as *;
+
+.footer {
+  padding: 50px 0;
+  text-align: center;
+  .menu-area {
+    @include flex($j: center, $gap: 20px);
+    margin-top: 10px;
+  }
+}
+
+.quick {
+  @include posType($pos: fixed, $b: 100px, $r: 20px, $idx: 100);
+  .btn-top {
+    flex-shrink: 0;
+    width: 30px;
+    height: 30px;
+    border: 1px solid $bd-c;
+    border-radius: 50%;
+    svg {
+      font-size: medium;
+    }
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "footerArr": [
+    {
+      "title": "Corporate",
+      "arr": [
+        {
+          "id": "aboutUs",
+          "text": "About US"
+        },
+        {
+          "id": "ourSupporters",
+          "text": "Our Supporters"
+        },
+        {
+          "id": "promotions",
+          "text": "Promotions"
+        },
+        {
+          "id": "accessibility",
+          "text": "Accessibility"
+        }
+      ]
+    },
+    {
+      "title": "Install App",
+      "descApp": "From App Store or Google Play",
+      "arrApp": [
+        {
+          "id": "appStore",
+          "text": "App Store"
+        },
+        {
+          "id": "googlePlay",
+          "text": "Google Play"
+        }
+      ],
+      "descPay": "Secured Payment Gateways",
+      "arrPay": [
+        {
+          "id": "visa",
+          "text": "Visa"
+        },
+        {
+          "id": "mastercard",
+          "text": "Master card"
+        },
+        {
+          "id": "paypal",
+          "text": "Paypal"
+        },
+        {
+          "id": "applePay",
+          "text": "Apple Pay"
+        }
+      ]
+    }
+  ],
+  "phone": {
+    "num": "1234 - 5678",
+    "time": "Working on 10:00 ~ 17:00"
+  },
+  "sns": {
+    "followUs": "Follow us",
+    "desc": "Up to 15% discount on your first subscribe",
+    "arr": [
+      {
+        "id": "ig",
+        "text": "Instagram"
+      },
+      {
+        "id": "youtube",
+        "text": "Youtube"
+      },
+      {
+        "id": "pinterest",
+        "text": "Pinterest"
+      },
+      {
+        "id": "fb",
+        "text": "Facebook"
+      },
+      {
+        "id": "twitter",
+        "text": "Twitter"
+      }
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+@charset 'utf-8';
+
+// com
+@use "com/_reset";
+@use "com/_com";
+
+// 레이아웃 스타일
+@use "layout/_header";
+@use "layout/_footer";
+@use "layout/_all";
+
+// component
+@use "components/_button";
+@use "components/_swiper";
+@use "components/_tab";
+@use "components/_table";
+@use "components/_typo";
+@use "components/_item";
+@use "components/_m_drawer";
+@use "components/_form";
+// @use "components/_img";
+// @use "components/_accordion";
+
+// pages
+@use "pages/_main";
+@use "pages/_auth";
+@use "pages/_cart";
+@use "pages/_item_detail";
+// @use "components/_pd";

@@ -1,0 +1,154 @@
+@use "@/styles/scss/globals.scss" as *;
+
+@keyframes rotateClockwise {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+// loading
+.loading {
+  @include flex($j: center);
+  width: 100vw;
+  height: 100vh;
+  .MuiSvgIcon-root {
+    animation: rotateClockwise 2s linear infinite;
+    transform-origin: center center;
+    font-size: xxx-large;
+  }
+}
+
+// contents width
+.in {
+  width: $w-default;
+  margin: 0 auto;
+  // padding: 0 80px;
+}
+.in-m {
+  width: calc($w-default - 40px);
+  margin: 0 auto;
+
+}
+.in-b {
+  width: $w-sm;
+  margin: 0 auto;
+}
+
+// hidden
+.hidden {
+  display: none !important;
+}
+
+// main
+main.main {
+  padding: 180px 0 80px;
+}
+
+// flex
+.flex {
+  @include flex;
+  &-btw {
+    justify-content: space-between;
+  }
+  &-c {
+    justify-content: center;
+  }
+}
+
+// box
+.box {
+  &-1 {
+    overflow: hidden;
+    border: 1px solid $bd-c;
+    border-radius: 8px;
+  }
+}
+
+// bread crumb
+.bread-crumb {
+  margin: 20px auto;
+  ol {
+    @include flex;
+    li {
+      @include txtType($size: $fz-sm, $cl: dark-grey, $wt: $fw-light);
+      + li {
+        margin-left: 15px;
+        padding-left: 15px;
+        a {
+          position: relative;
+          @include pseudo(
+            $pseudo: before,
+            $t: 50%,
+            $l: -20px,
+            $w: 5px,
+            $h: 5px
+          ) {
+            transition: ease-in-out 0.3s;
+            transform: translateY(-50%) rotate(45deg);
+            border-top: 1px solid $dark-grey;
+            border-right: 1px solid $dark-grey;
+          }
+        }
+      }
+    }
+  }
+}
+
+// sns
+.sns-field {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid $bd-c;
+  ul {
+    @include flex($j: center, $gap: 10px);
+    li {
+      width: 50px;
+      height: 50px;
+      .btn {
+        @include flex($j: center);
+        width: 100%;
+        padding: 10px;
+      }
+    }
+  }
+}
+
+// margin
+$directionsM: (
+  mt: top,
+  mr: right,
+  mb: bottom,
+  ml: left,
+);
+@each $short, $full in $directionsM {
+  @for $i from 0 through 20 {
+    .#{$short}#{ $i * 5 } {
+      margin-#{$full}: #{$i * 5}px;
+    }
+  }
+}
+
+// padding
+$directionsP: (
+  mt: top,
+  mr: right,
+  mb: bottom,
+  ml: left,
+);
+@each $short, $full in $directionsP {
+  @for $i from 0 through 20 {
+    .#{$short}#{ $i * 5 } {
+      padding-#{$full}: #{$i * 5}px;
+    }
+  }
+}
+
+// border
+.bb-prm {
+  border-bottom: 1px solid $prm;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}

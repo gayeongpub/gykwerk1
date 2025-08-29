@@ -1,0 +1,160 @@
+@charset 'utf-8';
+@use "@/styles/scss/globals.scss" as *;
+@use "sass:color";
+
+// section common
+section.section {
+  &:not(:first-child) {
+    margin-top: 40px;
+  }
+  .title {
+    @include flex($j: space-between);
+    margin-bottom: 25px;
+  }
+}
+
+// main banner
+.main-banner {
+  .swiper-slide {
+    overflow: hidden;
+    max-height: 250px;
+    // link
+    a {
+      @include flex($j: space-between);
+      .text {
+        @include flex($dr: column, $j: center, $align: flex-start);
+        @include posType($t: 0, $l: 0, $w: 100%, $h: 100%);
+        padding: 30px 50px;
+        background-color: $dim-light;
+        * {
+          display: block;
+          color: $white;
+        }
+        strong {
+          font-size: $tit;
+          font-weight: $fw-light;
+        }
+      }
+      .img {
+        width: 100%;
+      }
+    }
+  }
+  //   navigation
+  .btn {
+    &-area {
+      @include flex($j: center);
+      @include posType($b: 10px, $l: 0, $idx: 1, $w: 100%);
+    }
+    &-prev,
+    &-next {
+      @include flex($j: center);
+      color: $white;
+      cursor: pointer;
+      &::after {
+        font-size: 30px;
+      }
+    }
+    // pagination
+    &-paging.swiper-pagination-bullets {
+      width: fit-content;
+      padding: 0;
+    }
+  }
+}
+
+// ctgr
+.ctgr-area {
+  .swiper-slide {
+    @include flex($j: center);
+    width: 120px;
+    > a {
+      @include flex($dr: column, $j: center);
+    }
+    .img {
+      @include flex($j: center);
+      flex-shrink: 0;
+      width: 90px;
+      height: 90px;
+    }
+    .text {
+      margin-top: 15px;
+      color: $dark-grey;
+      text-align: center;
+    }
+  }
+}
+
+// recom
+.recom-area {
+  @include flex($gap: 10px);
+  width: 100%;
+  .bg-img {
+    position: relative;
+    width: 50%;
+    img {
+      width: 100%;
+    }
+    a {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+    .tit-sec {
+      @include posType($b: 0, $l: 0, $idx: 1, $w: 100%);
+      padding: 30px;
+      color: $white;
+      text-align: right;
+      .title-2 {
+        color: $white;
+      }
+      span {
+        display: block;
+      }
+    }
+  }
+}
+
+// flex-area
+.flex-area {
+  @include flex($align: flex-start, $gap: 50px);
+  .tit-wrap {
+    flex: 0 0 400px;
+    width: 400px;
+    .title-2 {
+      padding-top: 25px;
+    }
+    .btn-more {
+      justify-content: flex-start;
+      margin: 5px 0 0 0;
+      text-align: left;
+    }
+    .bg-img {
+      margin-top: 30px;
+    }
+  }
+}
+
+.event-area {
+  position: relative;
+  ul {
+    li {
+      .btn-area {
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+.season-area {
+  div.depth {
+    // depth-1
+    &-1 {
+      @include flex($align: flex-start, $gap: 15px);
+      // depth-1-l
+      .depth-1-l {
+        flex: 1 1;
+      }
+    }
+  }
+}

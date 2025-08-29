@@ -1,0 +1,73 @@
+@charset 'utf-8';
+
+// black and white
+$black: #262626;
+$dark-grey: #666666;
+$light-grey: #b2b2b2;
+$bd-c: #cccccc;
+$bd-l: #ececec;
+$bg-dark: #e6e6e6;
+$bg-light: #eaeaea;
+$white: #ffffff;
+
+// primary
+$prm: #3bb77e;
+$prm-sub: #57c489;
+$prm-active: #329965;
+$prm-disabled: #c9ffe2;
+
+// highlighted
+$highlight: #f4d160;
+$highlight-sub: #fbeeac;
+
+// negative
+$neg: #b22222;
+$neg-sub: #da8da3;
+
+// dim
+$dim-dark: rgba(0, 0, 0, 0.7);
+$dim-light: rgba(0, 0, 0, 0.2);
+$dim-lighter: rgba(0, 0, 0, 0.05);
+$dim-blur: rgba(255, 255, 255, 0.3);
+$dim-white: rgba(255, 255, 255, 0.7);
+
+// box-shadow
+$shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+$shadow2: 0 4px 16px rgba(0, 0, 0, 0.05);
+$shadow3: 5px 5px 15px 0px rgba(0, 0, 0, 0.05);
+
+// title size
+$tit-xs: 22px;
+$tit-sm: 26px;
+$tit: 30px;
+$tit-lg: 34px;
+$tit-xl: 38px;
+
+// text size
+$fz-xs: 12px;
+$fz-sm: 14px;
+$fz-d: 16px !default;
+$fz-lg: 18px;
+$fz-xl: 20px;
+
+// line-height
+$lh-xs: 1;
+$lh-sm: 1.1;
+$lh: 1.2;
+$lh-lg: 1.4;
+$lh-xl: 1.6;
+
+// font-weight
+$fw-light: 400;
+$fw-d: 500;
+$fw-bold: 700;
+
+// default inner size
+$w-default: 1440px;
+$w-sm: 600px;
+
+// iconUrl
+// $iconUrl: "./public/img/com/";
+
+// aniTime
+$aniTime: ease-in-out 0.25s;

@@ -1,0 +1,211 @@
+@charset 'utf-8';
+@use "@/styles/scss/globals.scss" as *;
+@use "sass:color";
+
+.cart {
+  // cont
+  > .cont {
+    @include flex($align: flex-start, $gap: 40px);
+  }
+  // left: list-area
+  .list-area {
+    flex: 1;
+  }
+  // right: sticky
+  .sticky {
+    @include posType($pos: sticky, $t: 150px, $r: 0, $w: 380px, $idx: 100);
+    // top: 180px;
+    padding: 25px 20px 20px;
+    border: 1px solid $prm;
+    border-radius: 8px;
+    background-color: $white;
+    .txt {
+      @include flex($j: space-between);
+      @include txtType($size: $fz-d, $lh: $lh, $wt: $fw-d);
+      + .txt {
+        margin-top: 15px;
+      }
+    }
+    .btn {
+      width: 100%;
+      margin-top: 25px;
+    }
+    .terms {
+      margin-top: 25px;
+      padding-top: 25px;
+      border-top: 1px solid $bd-c;
+      &-list {
+        @include flex($j: space-between);
+      }
+      .btn-more {
+        width: auto;
+        margin-top: 0;
+      }
+    }
+  }
+
+  // company
+  .company {
+    @include flex($j: space-between);
+    padding: 10px 15px;
+    border-bottom: 1px solid $bd-c;
+    background-color: $dim-lighter;
+    .MuiTypography-root {
+      font-weight: $fw-bold;
+    }
+    .left {
+      @include flex;
+      align-self: stretch;
+    }
+    .MuiSvgIcon-root {
+      font-size: larger;
+    }
+  }
+  // depth
+  .depth {
+    // depth-1
+    &-1 {
+      &-li {
+        + .depth-1-li {
+          margin-top: 30px;
+        }
+      }
+      .details {
+        @include flex;
+        flex: 1;
+        .left {
+          flex: 1;
+          align-self: stretch;
+          padding: 15px;
+          a {
+            @include flex($align: flex-start, $gap: 15px);
+          }
+          .name,
+          .price-per {
+            display: block;
+          }
+          .name {
+            max-height: 48px;
+            margin-top: 5px;
+            line-height: $lh;
+            font-weight: $fw-d;
+            @include ellipsis(2);
+          }
+          .price-per {
+            margin-top: 5px;
+            .discount {
+              color: $neg;
+              font-weight: bold;
+            }
+            .price {
+              margin-left: 5px;
+              font-weight: bold;
+            }
+            .old {
+              margin-left: 5px;
+              font-size: $fz-sm;
+              color: $dark-grey;
+              text-decoration: line-through;
+            }
+          }
+          .desc {
+            padding: 5px 0;
+          }
+        }
+        .option-area {
+          @include flex($dr: column, $j: center);
+          align-self: stretch;
+          width: 200px;
+          flex-shrink: 0;
+          border-left: 1px solid $bd-c;
+          li {
+            width: 100%;
+            height: 100%;
+            padding: 15px;
+            + li {
+              border-top: 1px solid $bd-c;
+            }
+          }
+          .txt {
+            display: block;
+            @include txtType($size: $fz-sm, $lh: $lh-sm);
+            + .txt {
+              margin-top: 10px;
+            }
+          }
+        }
+        .price-area {
+          @include flex($dr: column, $j: center);
+          align-self: stretch;
+          width: 150px;
+          flex-shrink: 0;
+          padding: 15px;
+          border-left: 1px solid $bd-c;
+          .tit {
+            font-size: $fz-sm;
+          }
+          .btn {
+            margin-top: 5px;
+          }
+        }
+        .img {
+          flex-shrink: 0;
+          width: 120px;
+          height: 120px;
+          border: 1px solid $bd-c;
+          border-radius: 4px;
+        }
+      }
+    }
+    // depth-2
+    &-2 {
+      @include flex;
+      > ul {
+        flex: 1;
+      }
+      .shipping {
+        @include flex($dr: column, $j: center);
+        flex-shrink: 0;
+        align-self: stretch;
+        width: 150px;
+        height: auto;
+        border-left: 1px solid $bd-c;
+        * {
+          display: block;
+        }
+      }
+      &-li {
+        @include flex($align: flex-start);
+        + .depth-2-li {
+          border-top: 1px solid $bd-c;
+        }
+      }
+    }
+  }
+
+  .summery {
+    position: sticky;
+    top: 0;
+    right: 0;
+  }
+  .total {
+    @include flex($j: center, $gap: 40px);
+    padding: 30px;
+    border-top: 1px solid $bd-c;
+    ul {
+      @include flex($gap: 20px);
+      .currency {
+        margin-left: 5px;
+      }
+      li {
+        @include flex;
+        .tit {
+          margin-left: 20px;
+        }
+      }
+    }
+    .order {
+      @include flex($gap: 20px);
+    }
+  }
+}

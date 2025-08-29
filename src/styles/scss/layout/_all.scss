@@ -1,0 +1,59 @@
+@use "@/styles/scss/globals.scss" as *;
+
+// footer
+.all-menu {
+  padding: 50px 0;
+
+  // header > drawer
+  &.MuiBox-root {
+    // title
+    .MuiTypography-h6 {
+      padding: 25px 0 35px;
+      @include txtType($size: $tit-lg, $lh: 1.5rem, $wt: $fw-d, $align: center);
+    }
+  }
+
+  .depth-wrap {
+    @include flex($align: flex-start, $gap: 20px, $wrap: wrap);
+  }
+  .list-depth {
+    &1 {
+      @include flex($dr: column, $align: flex-start, $gap: 25px);
+      width: calc((100% - 75px) / 4);
+      padding: 30px 20px;
+      .tit {
+        width: 100%;
+        padding-bottom: 15px;
+        border-bottom: 1px solid $bd-c;
+      }
+      ol {
+        @include flex($align: flex-start, $wrap: wrap);
+        width: 80%;
+
+      }
+    }
+    &2 {
+      width: 100%;
+
+      + .list-depth2 {
+        margin-top: 5px;
+      }
+      .list {
+        position: relative;
+        font-size: $fz-sm;
+        @include pseudo($pseudo: after, $t: 50%, $r: 0, $w: 7px, $h: 7px) {
+          transition: ease-in-out 0.3s;
+          transform: translateY(-50%) rotate(45deg);
+          border-top: 1px solid $white;
+          border-right: 1px solid $white;
+        }
+        &:hover {
+          &:after {
+            transition: ease-in-out 0.3s;
+            transform: translate(5px, -50%) rotate(45deg);
+          }
+        }
+      }
+    }
+  }
+}

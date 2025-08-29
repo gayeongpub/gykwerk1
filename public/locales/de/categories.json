@@ -1,0 +1,90 @@
+{
+  "title": "Kategorien",
+  "featuredTitle": "Empfohlene Kategorien",
+  "arr": [
+    {
+      "type": "a",
+      "title": "Teller",
+      "depth2": [
+        { "tit": "Kleine & Beilagenteller", "link": "/" },
+        { "tit": "Tiefe Teller", "link": "/" },
+        { "tit": "Kindergeschirr", "link": "/" },
+        { "tit": "Tee- & Kaffeetassenunterteller", "link": "/" },
+        { "tit": "Tischsets & Starter-Sets", "link": "/" },
+        { "tit": "Plastikteller", "link": "/" }
+      ]
+    },
+    {
+      "type": "b",
+      "title": "Tassen & Becher",
+      "depth2": [
+        { "tit": "Kaffeetassen", "link": "/" },
+        { "tit": "Mumin-Becher", "link": "/" },
+        { "tit": "Teetassen", "link": "/" },
+        { "tit": "Thermosflaschen & Reisebecher", "link": "/" },
+        { "tit": "Espressotassen", "link": "/" },
+        { "tit": "Plastikbecher", "link": "/" },
+        { "tit": "Kinderbecher", "link": "/" }
+      ]
+    },
+    {
+      "type": "c",
+      "title": "Besteck",
+      "depth2": [
+        { "tit": "Bestecksets", "link": "/" },
+        { "tit": "Dessertbesteck", "link": "/" },
+        { "tit": "Tischbesteck", "link": "/" },
+        { "tit": "Kinderbesteck", "link": "/" },
+        { "tit": "Tee- & Kaffeelöffel", "link": "/" },
+        { "tit": "Kuchenmesser & Servierer", "link": "/" },
+        { "tit": "Buttermesser", "link": "/" },
+        { "tit": "Essstäbchen", "link": "/" },
+        { "tit": "Starterbesteck", "link": "/" }
+      ]
+    },
+    {
+      "type": "a",
+      "title": "Schüsseln",
+      "depth2": [
+        { "tit": "Servierschüsseln", "link": "/" },
+        { "tit": "Frühstücksschüsseln", "link": "/" },
+        { "tit": "Mumin-Schüsseln", "link": "/" },
+        { "tit": "Eierbecher", "link": "/" },
+        { "tit": "Dessertschüsseln", "link": "/" },
+        { "tit": "Salatschüsseln", "link": "/" }
+      ]
+    },
+    {
+      "type": "b",
+      "title": "Ess- & Tisch Zubehör",
+      "depth2": [
+        { "tit": "Tabletts", "link": "/" },
+        { "tit": "Tischsets", "link": "/" },
+        { "tit": "Papierservietten", "link": "/" },
+        { "tit": "Untersetzer", "link": "/" },
+        { "tit": "Tischdecken", "link": "/" },
+        { "tit": "Salz- & Pfefferstreuer", "link": "/" }
+      ]
+    },
+    {
+      "type": "c",
+      "title": "Getränke- & Bar Zubehör",
+      "depth2": [
+        { "tit": "Wein- & Barzubehör", "link": "/" },
+        { "tit": "Korkenzieher", "link": "/" },
+        { "tit": "Flaschenöffner", "link": "/" },
+        { "tit": "Eiskübel", "link": "/" }
+      ]
+    },
+    {
+      "type": "a",
+      "title": "Karaffen & Kannen",
+      "depth2": [
+        { "tit": "Wasserkrüge & Karaffen", "link": "/" },
+        { "tit": "Wasserflaschen", "link": "/" },
+        { "tit": "Milchkännchen", "link": "/" },
+        { "tit": "Teekannen", "link": "/" }
+      ]
+    }
+  ]
+}

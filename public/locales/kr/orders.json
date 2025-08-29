@@ -1,0 +1,9 @@
+{
+  "order": "주문하기",
+  "freeReturnsExchanges": "무료 교환 및 반품",
+  "itemPrice": "상품 가격",
+  "totalItemPrice": "총 상품 가격",
+  "totalOrderPrice": "총 주문 가격",
+  "shippingPrice": "배송비",
+  "totalShippingCost": "총 배송비"
+}

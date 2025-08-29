@@ -1,0 +1,28 @@
+{
+  "unit": "₩",
+  "auth": {
+    "id": "ID",
+    "pw": "Passwort",
+    "signIn": "Anmelden"
+  },
+  "buttons": {
+    "close": "Schiliessen",
+    "viewMore": "Mehr ansehen",
+    "viewDetails": "Details ansehen",
+    "goShop": "Jetzt entdecken",
+    "cart": "Warenkorb",
+    "favorites": "Favoriten"
+  },
+  "coupon": "Gutschein",
+  "event": "Angebote",
+  "cart": {
+    "title": "Warenkorb",
+    "freeExchangesReturns": "Kostenloser Umtausch und Rückversand",
+    "afterConfirmation": "Produktion nach Bestellbestätigung"
+  },
+  "terms": {
+    "termsOfService": "Nutzungsbedingungen",
+    "requiredTerms": "Erforderliche Bedingungen",
+    "OptionalTerms": "Optionale Bedingungen"
+  }
+}

@@ -1,0 +1,20 @@
+@use "@/styles/scss/globals.scss" as *;
+
+div {
+  .css-imrjgg-MuiButtonBase-root-MuiCheckbox-root.Mui-checked,
+  .css-imrjgg-MuiButtonBase-root-MuiCheckbox-root.MuiCheckbox-indeterminate {
+    // primary color
+    color: $prm;
+  }
+
+  // checkbox label
+  .MuiFormControlLabel {
+    &-root {
+      flex-shrink: 0;
+    }
+    // required
+    &-asterisk {
+      color: $neg;
+    }
+  }
+}

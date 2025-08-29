@@ -1,0 +1,28 @@
+{
+  "unit": "₩",
+  "auth": {
+    "id": "아이디",
+    "pw": "비밀번호",
+    "signIn": "로그인"
+  },
+  "buttons": {
+    "close": "닫기",
+    "viewMore": "더보기",
+    "viewDetails": "자세히 보기",
+    "goShop": "보러가기",
+    "cart": "장바구니",
+    "favorites": "찜 목록"
+  },
+  "coupon": "쿠폰",
+  "event": "이벤트",
+  "cart": {
+    "title": "장바구니",
+    "freeExchangesReturns": "무료교환반품",
+    "afterConfirmation": "주문확인 후 제작"
+  },
+  "terms": {
+    "termsOfService": "이용약관",
+    "requiredTerms": "필수약관",
+    "OptionalTerms": "선택약관"
+  }
+}

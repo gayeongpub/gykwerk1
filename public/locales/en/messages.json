@@ -1,0 +1,28 @@
+{
+  "unit": "₩",
+  "auth": {
+    "id": "ID",
+    "pw": "Password",
+    "signIn": "Sign in"
+  },
+  "buttons": {
+    "close": "Close",
+    "viewMore": "View more items",
+    "viewDetails": "View Details",
+    "goShop": "Shop Now",
+    "cart": "Cart",
+    "favorites": "Favorites"
+  },
+  "coupon": "Coupon",
+  "event": "Event",
+  "cart": {
+    "title": "Cart",
+    "freeExchangesReturns": "Free exchanges and returns",
+    "afterConfirmation": "Made to order after confirmation"
+  },
+  "terms": {
+    "termsOfService": "Terms of Service",
+    "requiredTerms": "Required Terms",
+    "OptionalTerms": "Optional Terms"
+  }
+}

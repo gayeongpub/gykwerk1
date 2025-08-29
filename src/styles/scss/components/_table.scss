@@ -1,0 +1,18 @@
+@use "@/styles/scss/globals.scss" as *;
+
+table.table {
+  thead {
+    th {
+      padding: 20px 15px;
+      background-color: $bg-light;
+      border-bottom: 1px solid $bd-c;
+    }
+  }
+  tbody {
+    th,
+    td {
+      padding: 20px 10px;
+      border-bottom: 1px solid $bd-c;
+    }
+  }
+}

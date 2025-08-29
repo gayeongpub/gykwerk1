@@ -1,0 +1,8 @@
+import { createHotContext as __vite__createHotContext } from "/_nuxt/@vite/client";import.meta.hot = __vite__createHotContext("/layouts/main.vue?vue&type=style&index=0&lang.scss");import { updateStyle as __vite__updateStyle, removeStyle as __vite__removeStyle } from "/_nuxt/@vite/client"
+const __vite__id = "C:/workspace/smfo-vue/layouts/main.vue?vue&type=style&index=0&lang.scss"
+const __vite__css = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkM6L3dvcmtzcGFjZS9zbWZvLXZ1ZS9sYXlvdXRzL21haW4udnVlIl0sInNvdXJjZXNDb250ZW50IjpbIlxyXG4vLyDsmIjsi5wgLSBEaXNwbGF5TGF5b3V0SGVhZGVyIOy7tO2PrOuEjO2KuCDrgrTrtoBcclxuLy8gLm1haW4tY29udGVudHMge1xyXG4vLyAgIHBhZGRpbmctdG9wOiA2MHB4OyAvLyBoZWFkZXIg64aS7J2066eM7YG8IOyXrOycoCDso7zquLBcclxuLy8gfVxyXG4iXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7QUFDQSxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsbUJBQW1CLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQztBQUNuQyxDQUFDLENBQUMsQ0FBQyxDQUFDLElBQUksQ0FBQyxRQUFRLENBQUMsQ0FBQztBQUNuQixDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsT0FBTyxDQUFDLEdBQUcsQ0FBQyxDQUFDLElBQUksQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLE1BQU0sQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDO0FBQzVDLENBQUMsQ0FBQyxDQUFDLENBQUM7In0= */"
+__vite__updateStyle(__vite__id, __vite__css)
+import.meta.hot.accept()
+import.meta.hot.prune(() => __vite__removeStyle(__vite__id))
+document.querySelectorAll(`link[href="/_nuxt/layouts/main.vue?vue&type=style&index=0&lang.scss"]`).forEach(i=>i.remove())
+document.querySelectorAll(`link[href="/_nuxt/@fs/layouts/main.vue?vue&type=style&index=0&lang.scss"]`).forEach(i=>i.remove())

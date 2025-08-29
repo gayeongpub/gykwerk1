@@ -1,0 +1,216 @@
+{
+  "title": "Categories",
+  "featuredTitle": "Featured Categories",
+  "arr": [
+    {
+      "type": "a",
+      "title": "Plates",
+      "depth2": [
+        {
+          "tit": "Small plates & side plates",
+          "link": "/"
+        },
+        {
+          "tit": "Deep plates",
+          "link": "/"
+        },
+        {
+          "tit": "Children's tableware",
+          "link": "/"
+        },
+        {
+          "tit": "Tea & coffee soucers",
+          "link": "/"
+        },
+        {
+          "tit": "Table settings & starter sets",
+          "link": "/"
+        },
+        {
+          "tit": "Plastic plates",
+          "link": "/"
+        }
+      ]
+    },
+    {
+      "type": "b",
+      "title": "Cups & Mugs",
+      "depth2": [
+        {
+          "tit": "Coffee cups",
+          "link": "/"
+        },
+        {
+          "tit": "Moomin mugs",
+          "link": "/"
+        },
+        {
+          "tit": "Teacups",
+          "link": "/"
+        },
+        {
+          "tit": "Thermal flasks & travel mugs",
+          "link": "/"
+        },
+        {
+          "tit": "Espresso cups",
+          "link": "/"
+        },
+        {
+          "tit": "Plastic cups",
+          "link": "/"
+        },
+        {
+          "tit": "Children's mugs",
+          "link": "/"
+        }
+      ]
+    },
+    {
+      "type": "c",
+      "title": "Cutlery",
+      "depth2": [
+        {
+          "tit": "Cutlery sets",
+          "link": "/"
+        },
+        {
+          "tit": "Dessert cutlery",
+          "link": "/"
+        },
+        {
+          "tit": "Table cutlery",
+          "link": "/"
+        },
+        {
+          "tit": "Children's cutlery",
+          "link": "/"
+        },
+        {
+          "tit": "Tea & coffee spoons",
+          "link": "/"
+        },
+        {
+          "tit": "Cake knives & servers",
+          "link": "/"
+        },
+        {
+          "tit": "Butter knives",
+          "link": "/"
+        },
+        {
+          "tit": "Chopsticks",
+          "link": "/"
+        },
+        {
+          "tit": "Starter cutlery",
+          "link": "/"
+        }
+      ]
+    },
+    {
+      "type": "a",
+      "title": "Bowls",
+      "depth2": [
+        {
+          "tit": "Serving bowls",
+          "link": "/"
+        },
+        {
+          "tit": "Breakfast bowls",
+          "link": "/"
+        },
+        {
+          "tit": "Moomin bowls",
+          "link": "/"
+        },
+        {
+          "tit": "Egg cups",
+          "link": "/"
+        },
+        {
+          "tit": "Dessert bowls",
+          "link": "/"
+        },
+        {
+          "tit": "Salad bowls",
+          "link": "/"
+        }
+      ]
+    },
+    {
+      "type": "b",
+      "title": "Dinings & table accessories",
+      "depth2": [
+        {
+          "tit": "Trays",
+          "link": "/"
+        },
+        {
+          "tit": "Placements",
+          "link": "/"
+        },
+        {
+          "tit": "Paper napkins",
+          "link": "/"
+        },
+        {
+          "tit": "Coasters",
+          "link": "/"
+        },
+        {
+          "tit": "Tablecloths",
+          "link": "/"
+        },
+        {
+          "tit": "Salt & Pepper shakers",
+          "link": "/"
+        }
+      ]
+    },
+    {
+      "type": "c",
+      "title": "Drink & bar accessories",
+      "depth2": [
+        {
+          "tit": "Wine & barware",
+          "link": "/"
+        },
+        {
+          "tit": "Cockscrews",
+          "link": "/"
+        },
+        {
+          "tit": "Bottle openers",
+          "link": "/"
+        },
+        {
+          "tit": "Ice buckets",
+          "link": "/"
+        }
+      ]
+    },
+    {
+      "type": "a",
+      "title": "Jugs",
+      "depth2": [
+        {
+          "tit": "Water jugs and carafes",
+          "link": "/"
+        },
+        {
+          "tit": "Water bottles",
+          "link": "/"
+        },
+        {
+          "tit": "Milk jugs",
+          "link": "/"
+        },
+        {
+          "tit": "Teapots",
+          "link": "/"
+        }
+      ]
+    }
+  ]
+}

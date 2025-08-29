@@ -1,0 +1,9 @@
+@use "@/styles/scss/globals.scss" as *;
+
+.swiper {
+  .swiper-pagination {
+    &-bullet-active {
+      background-color: $white;
+    }
+  }
+}

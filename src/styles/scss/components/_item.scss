@@ -1,0 +1,252 @@
+@use "@/styles/scss/globals.scss" as *;
+
+.item-area {
+  // common
+  ul {
+    li {
+      overflow: hidden;
+      position: relative;
+      > a {
+        display: block;
+        @include posType($t: 0, $l: 0, $idx: 1, $w: 100%, $h: 100%);
+      }
+      &:hover {
+        .name {
+          transition: $aniTime;
+          color: $prm;
+        }
+      }
+    }
+    .tag {
+      @include posType($t: 0, $l: 0, $idx: 1);
+      padding: 6px 10px;
+      border-radius: 0;
+      border-bottom-right-radius: 8px;
+      font-weight: $fw-bold;
+      &.hot {
+        background-color: $neg-sub;
+        color: $white;
+      }
+      &.new {
+        background-color: $highlight;
+      }
+      &.sale {
+        background-color: $prm;
+        color: $white;
+      }
+    }
+    .img {
+      position: relative;
+      a {
+        @include flex($j: center);
+        width: 100%;
+        height: 100%;
+      }
+      img {
+        max-width: 70%;
+      }
+    }
+    .top {
+      @include flex($j: space-between);
+      position: relative;
+      width: 100%;
+      .btn-area {
+        @include flex($j: center, $gap: 5px);
+        position: relative;
+        z-index: 1;
+        button {
+          @include flex($j: center);
+          width: 25px;
+          height: 25px;
+        }
+      }
+    }
+  }
+  .desc {
+    span,
+    strong {
+      display: block;
+    }
+    .ctgr {
+      display: inline-block;
+      padding: 4px 8px;
+      border: 1px solid $bd-l;
+      border-radius: 4px;
+      @include txtType($size: $fz-xs, $lh: 1, $cl: $dark-grey, $wt: $fw-light);
+      background-color: $white;
+    }
+    .name {
+      height: 48px;
+      margin-top: 5px;
+      @include txtType($size: $fz-d, $cl: $black, $wt: $fw-d);
+      @include ellipsis($lines: 2);
+      transition: $aniTime;
+    }
+    .price {
+      @include flex($align: flex-end, $gap: 8px);
+      margin-top: 10px;
+      &-area {
+        @include flex($j: space-between, $align: flex-end);
+      }
+      .now {
+        @include txtType(
+          $size: $fz-xl,
+          $lh: $lh-xl,
+          $cl: $black,
+          $wt: $fw-bold
+        );
+      }
+      .org {
+        @include txtType(
+          $size: $fz-sm,
+          $lh: 32px,
+          $cl: $light-grey,
+          $wt: $fw-d
+        );
+        text-decoration: line-through;
+      }
+    }
+  }
+
+  &.type {
+    // type-card
+    &-card {
+      &.col-4 {
+        ul {
+          gap: 20px;
+          li {
+            width: calc(25% - 15px);
+            .img {
+              height: 200px;
+            }
+          }
+        }
+      }
+      &.col-5 {
+        ul {
+          gap: 30px;
+          li {
+            width: calc(20% - 24px);
+            .img {
+              height: 250px;
+            }
+          }
+        }
+      }
+      &.col-6 {
+        ul {
+          gap: 15px;
+          li {
+            width: calc((100% - 60px) / 6);
+            .img {
+              height: 200px;
+            }
+          }
+        }
+      }
+      ul {
+        @include flex($align: flex-start, $wrap: wrap);
+        li {
+          align-self: stretch;
+          padding: 0 10px 15px;
+          border: 1px solid $bd-l;
+          border-radius: 8px;
+          transition: $aniTime;
+          &:hover {
+            transition: $aniTime;
+            border-color: $prm;
+          }
+          .desc {
+            margin-top: 15px;
+          }
+        }
+      }
+    }
+
+    // type-list
+    &-list {
+      ul {
+        @include flex($dr: column, $align: flex-start);
+        li {
+          @include flex($align: flex-start, $gap: 15px);
+          width: 100%;
+          padding: 15px 10px;
+          + li {
+            margin-top: 20px;
+          }
+          .img {
+            width: 130px;
+            height: 130px;
+            flex-shrink: 0;
+            border: 1px solid $bd-l;
+            border-radius: 4px;
+            transition: $aniTime;
+          }
+          .desc {
+            flex: 1;
+          }
+          &:hover {
+            .img {
+              transition: $aniTime;
+              border-color: $prm;
+            }
+          }
+        }
+      }
+      &.sm {
+        ul li {
+          padding: 8px 5px;
+          + li {
+            margin-top: 10px;
+          }
+          .img {
+            width: 100px;
+            height: 100px;
+          }
+        }
+      }
+    }
+  }
+
+  // event
+  &.event-area {
+    ul {
+      @include flex($gap: 20px);
+      li {
+        width: calc(25% - 15px);
+        .bg-img {
+          overflow: hidden;
+          width: 100%;
+          height: 350px;
+          border-radius: 15px;
+          img {
+            object-fit: cover;
+            width: 100%;
+          }
+        }
+        .desc {
+          @include posType(
+            $pos: relative,
+            $l: 50%,
+            $tf: translateX(-50%),
+            $w: calc(100% - 40px),
+            $idx: 1
+          );
+          margin-top: -100px;
+          margin-bottom: 10px;
+          padding: 15px;
+          border-radius: 10px;
+          background-color: $white;
+          box-shadow: $shadow3;
+        }
+      }
+    }
+  }
+}
+
+.tag {
+  padding: 4px 8px;
+  border: 1px solid $bd-c;
+  border-radius: 20px;
+  @include txtType($size: $fz-xs, $lh: $lh-sm);
+}

@@ -1,0 +1,233 @@
+@charset 'utf-8';
+@use "variables" as *;
+
+// blind text
+@mixin blind {
+  overflow: hidden;
+  display: inline-block;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+}
+
+// ellipsis
+@mixin ellipsis($lines: 1) {
+  @if ($lines == 1) {
+    overflow: hidden;
+    display: block !important;
+    max-width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  } @else {
+    overflow: hidden;
+    display: -webkit-box !important;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: $lines;
+    -webkit-box-orient: vertical;
+  }
+}
+
+// flex
+@mixin flex(
+  $dp: flex,
+  $dr: null,
+  $wrap: null,
+  $j: flex-start,
+  $align: center,
+  $gap: null
+) {
+  display: $dp;
+  flex-direction: $dr;
+  flex-wrap: $wrap;
+  justify-content: $j;
+  align-items: $align;
+  gap: $gap;
+
+  @content;
+}
+
+// ::before, ::after
+@mixin pseudo(
+  $pseudo,
+  $cont: "",
+  $pos: absolute,
+  $l: null,
+  $r: null,
+  $t: null,
+  $b: null,
+  $w: null,
+  $h: null,
+  $idx: 1
+) {
+  &::#{$pseudo} {
+    content: $cont;
+    position: $pos;
+    top: $t;
+    right: $r;
+    bottom: $b;
+    left: $l;
+    z-index: $idx;
+    width: $w;
+    height: $h;
+
+    @content;
+  }
+}
+
+// seperator
+@mixin separator(
+  $pseudo: before,
+  $r: null,
+  $l: null,
+  $w: 1px,
+  $h: 13px,
+  $bg: $gray-5
+) {
+  position: relative;
+
+  &::#{$pseudo} {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: $r;
+    left: $l;
+    transform: translateY(-50%);
+    z-index: 1;
+    width: $w;
+    height: $h;
+    background-color: $bg;
+  }
+}
+
+// buttons
+@mixin btn(
+  $bdColor: null,
+  $border: null,
+  $color: null,
+  $bdColorA: null,
+  $borderA: null,
+  $colorA: null,
+  $bdColorD: null,
+  $borderD: null,
+  $colorD: null
+) {
+  background-color: $bdColor;
+  border: $border;
+  color: $color;
+  &:hover,
+  &:active,
+  &.active {
+    background-color: $bdColorA;
+    border: $borderA;
+    color: $colorA;
+  }
+  &:disabled {
+    background-color: $bdColorD !important;
+    border: $borderD;
+    color: $colorD;
+  }
+}
+
+// buttons with icon
+@mixin btnIcon(
+  $pseudo: before,
+  $w: 16px,
+  $h: null,
+  $align: left,
+  $space: null,
+  $iconName
+) {
+  &::#{$pseudo} {
+    content: "";
+    display: block;
+    width: $w;
+    height: $h;
+    background: url(#{$iconUrl}#{$iconName}.svg) no-repeat center / 100% auto;
+    margin-#{$align}: $space;
+    @content;
+  }
+}
+
+// media query
+@mixin mobile {
+  @media (min-width: #{$mobile}) and (max-width: #{$tablet - 1px}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$tablet}) and (max-width: #{$desktop - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
+}
+
+// font-family
+@mixin fontF {
+  font-family: Arial, sans-serif;
+  font-weight: $fw-d;
+  line-height: 1.5;
+}
+
+// text
+@mixin txtType($size: null, $lh: null, $cl: null, $wt: null, $align: null) {
+  font-size: $size;
+  line-height: $lh;
+  color: $cl;
+  font-weight: $wt;
+  text-align: $align;
+}
+
+// icon
+@mixin iconPseudo($pseudo: before, $w, $h, $iconName) {
+  &::#{$pseudo} {
+    content: "";
+    display: block;
+    flex: 0 0 auto;
+    width: #{$w}px;
+    height: #{$h}px;
+    background: url(#{$iconUrl}#{$iconName}.svg) no-repeat center / 100% auto;
+
+    @content;
+  }
+}
+
+// box with border
+@mixin bdSet($w: 1px, $cl: $bg-dark, $rad: 4px, $bg: $white) {
+  overflow: hidden;
+  border: $w solid $cl;
+  border-radius: $rad;
+  background-color: $bg;
+}
+
+// position
+@mixin posType(
+  $pos: absolute,
+  $t: null,
+  $r: null,
+  $b: null,
+  $l: null,
+  $tf: null,
+  $idx: null,
+  $w: null,
+  $h: null
+) {
+  position: $pos;
+  top: $t;
+  right: $r;
+  bottom: $b;
+  left: $l;
+  transform: $tf;
+  z-index: $idx;
+  width: $w;
+  height: $h;
+}

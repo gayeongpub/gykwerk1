@@ -1,0 +1,13 @@
+.MuiDrawer-root {
+  // title
+  .MuiTypography-h6 {
+    margin-top: 0;
+  }
+
+  .MuiBox-root {
+    // full size
+    &.w-full {
+      width: 100vw;
+    }
+  }
+}

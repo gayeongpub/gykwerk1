@@ -1,0 +1,28 @@
+@use "@/styles/scss/globals.scss" as *;
+
+.page-detail {
+  .top {
+    @include flex($align: flex-start);
+    .thumb-area {
+      @include flex($align: flex-start, $gap: 20px);
+      width: 900px;
+      height: 800px;
+      .thumb {
+        &-sm {
+          width: 100px;
+          border: 1px solid green; // temp
+          .swiper-slide {
+            height: 100px;
+          }
+        }
+        &-lg {
+          overflow: hidden;
+          width: 780px;
+          height: 780px;
+          border: 1px solid rgb(196, 222, 135); // temp
+        }
+      }
+      flex-shrink: 0;
+    }
+  }
+}

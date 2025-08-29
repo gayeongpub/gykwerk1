@@ -1,0 +1,110 @@
+@use "@/styles/scss/globals.scss" as *;
+
+.header-wrap {
+  @include posType($pos: fixed, $t: 0, $l: 0, $w: 100%, $idx: 200);
+  // background: $dim-blur;
+  // backdrop-filter: blur(10px);
+  // -webkit-backdrop-filter: blur(10px);
+  // box-shadow: $shadow2;
+
+  .header {
+    @include posType($pos: absolute, $t: 20px, $l: 50%, $tf: translateX(-50%), $idx: 200);
+    padding: 15px 20px 10px;
+    border-radius: 10px;
+    box-shadow: $shadow3;
+    background-color: $white;
+    // 전체 header
+    // logo
+    .logo-area {
+      @include flex($j: space-between);
+      h1 {
+        height: 40px;
+        a {
+          height: 100%;
+        }
+      }
+    }
+    // gnb-area {
+    .gnb-area {
+      ul {
+        @include flex($gap: 5px);
+        li {
+          position: relative;
+          // lang
+          .btn-lang {
+            transition: all 0.1s;
+            &:hover {
+              transition: all 0.1s;
+              color: $prm;
+            }
+          }
+          .lang-pop {
+            overflow: hidden;
+            @include posType($t: 100%, $l: 0, $w: 100px, $h: auto, $idx: 2);
+            padding: 15px 10px;
+            border: 1px solid $bd-c;
+            border-radius: 8px;
+            background-color: $white;
+            button {
+              display: block;
+              width: 100%;
+              padding: 5px 0;
+              border-radius: 4px;
+              + button {
+                margin-top: 5px;
+              }
+              &:hover,
+              &.active {
+                background-color: $bg-light;
+                color: $prm;
+              }
+              &.active {
+                pointer-events: none;
+              }
+            }
+          }
+          // gnb
+          .gnb-link {
+            @include flex($j: center);
+            position: relative;
+            width: 35px;
+            height: 35px;
+          }
+          .count {
+            @include posType($t: 0, $r: 0, $idx: 1, $w: 16px, $h: 16px);
+            border-radius: 50%;
+            @include txtType(
+              $size: $fz-xs,
+              $cl: $white,
+              $wt: $fw-d,
+              $align: center
+            );
+            background-color: $prm;
+          }
+        }
+      }
+    }
+  }
+  // header-menu
+  .header-menu {
+    @include flex($j: space-between);
+  }
+  // menu-area
+  .menu-area {
+    // border-bottom: 1px solid $bd-c;
+    ul {
+      @include flex($gap: 25px);
+      li {
+        a {
+          padding: 10px 0;
+          @include txtType(
+            $size: $fz-sm,
+            $cl: inherit,
+            $wt: $fw-d,
+            $align: center
+          );
+        }
+      }
+    }
+  }
+}

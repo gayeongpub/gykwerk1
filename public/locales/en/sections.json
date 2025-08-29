@@ -1,0 +1,61 @@
+{
+  "mainBanner": [
+    {
+      "alt": "Plates for Everyday Moments",
+      "desc": "Make your everyday table a little more special.",
+      "link": "/"
+    },
+    {
+      "alt": "Fill Your Table with Style",
+      "desc": "A collection where beauty meets function.",
+      "link": "/"
+    },
+    {
+      "alt": "A Touch of Emotion on Your Table",
+      "desc": "Warm moments made even more special.",
+      "link": "/"
+    },
+    {
+      "alt": "One Plate, A New Mood",
+      "desc": "Find the perfect design for your kitchen.",
+      "link": "/"
+    },
+    {
+      "alt": "The Warmth of Tableware, The Story of Home",
+      "desc": "Add a touch of emotion to every meal.",
+      "link": "/"
+    },
+    {
+      "alt": "A Moment of Comfort on Your Table",
+      "desc": "Add a warm touch to your everyday meals.",
+      "link": "/"
+    }
+  ],
+  "favorites": {
+    "title": "Our All-Time Favorites"
+  },
+  "recom": {
+    "left": {
+      "title": "Everything you need for the Kitchen",
+      "desc1": "Up to 40%",
+      "desc2": "Enjoy a 15% coupon on orders over $200!"
+    },
+    "right": {
+      "title": "A Warm Sip, and the Perfect Plate",
+      "desc1": "Discover cups and dishes",
+      "desc2": "that bring a touch of calm to your everyday moments."
+    }
+  },
+  "newArrivals": {
+    "title": "New Arrivals"
+  },
+  "event": {
+    "title": "Summer Sale",
+    "desc": "Off",
+    "percent": "20~30%",
+    "alt": "Event banner image"
+  },
+  "season": {
+    "title": "This Summer"
+  }
+}

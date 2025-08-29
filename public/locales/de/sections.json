@@ -1,0 +1,61 @@
+{
+  "mainBanner": [
+    {
+      "alt": "Teller für jeden Moment",
+      "desc": "Machen Sie Ihren Alltag ein wenig besonderer.",
+      "link": "/"
+    },
+    {
+      "alt": "Füllen Sie Ihren Tisch mit Stil",
+      "desc": "Eine Kollektion, in der Schönheit auf Funktion trifft.",
+      "link": "/"
+    },
+    {
+      "alt": "Ein Hauch von Emotion auf dem Tisch",
+      "desc": "Wärmevolle Momente noch besonderer machen.",
+      "link": "/"
+    },
+    {
+      "alt": "Ein Teller, neue Stimmung",
+      "desc": "Finden Sie das perfekte Design für Ihre Küche.",
+      "link": "/"
+    },
+    {
+      "alt": "Die Wärme des Geschirrs, die Geschichte des Zuhauses",
+      "desc": "Verleihen Sie jedem Essen eine emotionale Note.",
+      "link": "/"
+    },
+    {
+      "alt": "Ein Moment der Geborgenheit auf dem Tisch",
+      "desc": "Verleihen Sie Ihren Mahlzeiten Wärme im Alltag.",
+      "link": "/"
+    }
+  ],
+  "favorites": {
+    "title": "Bestseller"
+  },
+  "recom": {
+    "left": {
+      "title": "Alles, was Sie für die Küche brauchen",
+      "desc1": "Bis zu 40 % Rabatt",
+      "desc2": "15 %-Gutschein bei Bestellungen über 200 $ sichern!"
+    },
+    "right": {
+      "title": "Ein warmer Schluck und das perfekte Geschirr",
+      "desc1": "Entdecken Sie Tassen und Teller",
+      "desc2": "die Ihren Alltag mit einem Hauch von Ruhe bereichern."
+    }
+  },
+  "newArrivals": {
+    "title": "Neuheiten"
+  },
+  "event": {
+    "title": "Sommerangebot",
+    "desc": "Rabatt",
+    "percent": "20~30%",
+    "alt": "Event-Bannerbild"
+  },
+  "season": {
+    "title": "Dieer Sommer"
+  }
+}

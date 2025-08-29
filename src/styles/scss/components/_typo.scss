@@ -1,0 +1,18 @@
+@use "@/styles/scss/globals.scss" as *;
+
+.title {
+  &-1 {
+  }
+  &-2 {
+    @include txtType($size: $tit, $cl: $black, $wt: $fw-bold);
+  }
+  &-3 {
+    @include txtType($size: $tit-sm, $cl: $black, $wt: $fw-bold);
+  }
+  &-4 {
+  }
+  &-5 {
+  }
+  &-6 {
+  }
+}

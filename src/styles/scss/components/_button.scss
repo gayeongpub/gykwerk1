@@ -1,0 +1,117 @@
+@use "@/styles/scss/globals.scss" as *;
+
+.MuiButton-root {
+  font-size: $fz-d;
+  + button {
+    margin-left: 5px;
+  }
+}
+
+.btn {
+  overflow: hidden;
+  flex-shrink: 0;
+  width: fit-content;
+  min-height: 32px;
+  transition: all 0.25s;
+  line-height: $lh;
+  background-color: $white;
+  &:hover {
+    transition: all 0.25s;
+  }
+  &.btn {
+    &-more {
+      @include flex($j: flex-end);
+      margin: 0 0 0 auto;
+      @include txtType(
+        $size: $fz-sm,
+        $lh: inherit,
+        $cl: inherit,
+        $wt: $fw-light,
+        $align: right
+      );
+      @include pseudo($pseudo: after, $pos: static, $w: 7px, $h: 7px) {
+        transform: rotate(45deg);
+        margin-left: 5px;
+        border-top: 1px solid $black;
+        border-right: 1px solid $black;
+      }
+      &:hover {
+        color: $prm;
+        &::after {
+          border-color: $prm;
+        }
+      }
+    }
+  }
+  &.type-line {
+    border: 1px solid $bd-c;
+    &:hover {
+      background-color: $bg-light;
+    }
+  }
+  &.rd {
+    padding: 0 15px;
+    border-radius: 8px;
+  }
+  &.cc {
+    border-radius: 50%;
+  }
+
+  // type
+  &.prm {
+    background-color: $prm;
+    border-color: $prm;
+    color: $white;
+    &:hover {
+      background-color: $prm-active;
+    }
+  }
+  &.neg {
+    background-color: $neg;
+    border-color: $neg;
+    color: $white;
+  }
+  &.line {
+    border-color: $prm;
+    &:hover {
+      border-color: $prm;
+      background-color: $prm;
+    }
+  }
+
+  //size
+  &.sm {
+    min-height: 26px;
+    padding: 0 8px;
+    font-size: $fz-xs;
+    line-height: $lh-sm;
+  }
+  &.lg {
+    min-height: 38px;
+    padding: 0 10px;
+    font-size: $fz-lg;
+    line-height: $lh;
+  }
+  &.xl {
+    min-height: 48px;
+    padding: 0 15px;
+    font-size: $fz-xl;
+    line-height: $lh-xl;
+  }
+
+  // pos
+  &.center {
+    width: 100%;
+    justify-content: center;
+  }
+
+  //
+  &-link-home {
+    @include flex($j: center);
+    width: 25px;
+    height: 25px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    background-color: $white;
+  }
+}
