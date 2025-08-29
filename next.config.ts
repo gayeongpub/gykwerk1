@@ -10,6 +10,7 @@ const nextConfig: NextConfig = {
   //   includePaths: [path.join(__dirname, "styles")],
   //   additionalData: `@import "styles/_variables.scss"; @import "styles/_mixins.scss"`,
   // },
+  output: 'export', // 정적 내보내기 모드
 };
 
 export default nextConfig;
